@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      本次實作最大的打擊在於使用線上 Colab 環境。當所有前期準備就緒，執行到最後一步要啟動運行環境時，系統卻因為資源或連線問題完全無法開啟。眼睜睜看著畫面卡死在啟動階段好幾個小時，前面精心設計的提示詞連測試的機會都沒有。這種連工具都無法順利啟動的巨大無力感，不僅極度消耗耐心，更讓人感到深深的挫折，實在令人難以繼續堅持下去。
     </div>
   </div>
 
@@ -169,12 +169,12 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
@@ -184,7 +184,7 @@
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,16 +194,57 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="flow.png" width="100%">
+        </figure>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#ff0000;"> 
+      <figure>
+        <figcaption>完成芙莉蓮文生圖</figcaption>
+        <a href="https://civitai.com/models/1188071/animagine-xl-40?modelVersionId=1337429">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1209474/test-lora?modelVersionId=1373925">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>very awa, masterpiece, best quality, ultra-detailed, frieren (sousou no frierren), anime artwork, 
+          anime screencap, 1girl, solo, white hair, twintails, green eyes, pointy ears, day, outdoor, 
+          sea of ​​flowers, ground, earrings, sousou no frieren, capelet, smile
+        </p>
+        <p>nsfw, worst quality, lowers, low quality, normal quality, jpeg artifacts, bad hands, 
+          mutated hands, text, missing fingers, extra fingers, extra digit,fewer digits, watermark, 
+          artist name, error, bad anatomy, incorrect proportions, nude, poker face
+        </p>
+        <img src="img1.png" width="100%">
+      </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
 
-  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty" style="background-color:#7030a0;">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成欣梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/376130/nova-anime-xl">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/402783/himmel-or-sousou-no-frieren-frieren-beyond-journeys-end">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>
+        </p>
+        <p>
+        </p>
+        <img src="img2.png" width="100%">
+      </figure>
+    </div>
+  </div>
 
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
@@ -250,3 +291,6 @@
 
 </body>
 </html>
+<!-- 
+
+-->
