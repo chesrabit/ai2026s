@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      迎來新作業，終於迎來了難得的好消息——這次的文生影片過程意外地順利！在這次的實作中，我摸索出了一個有趣的規律：其實這套程式跑起來並不慢，通常當你回過神來（差不多十分鐘左右），它就已經默默執行完畢了；相反地，如果回過神來發現進度條還卡在那裡，不用懷疑，直接果斷重開就對了。而在這過程中，我也試圖發揮好學的精神去理解背後的程式碼，卻發現它在後台悄悄下載了好幾個不同的模型。由於完全搞不清楚這些模型各自被應用在什麼地方、又是如何分工的，在經過一番掙扎後，我決定放過自己，瀟灑地放棄理解。總之，這次雖然在原理上依然霧裡看花，但看到成品順利產出的那一刻，還是讓人感到相當欣慰，也算是在這門課漫長的修練中，找到了一點小小的成就感。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,15 +195,36 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="1.png" width="100%"><br>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
 
-  <!-- ------------------------------------------------>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片</figcaption>
+      <img src="GIF_00001.png" width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫</figcaption>
+      <img src="GIF_00001.gif" width="100%"><br>
+        使用提示詞:
+          "0" :"sunny morning, full body shot, a girl wearing a white T-shirt and denim shorts, walking on a beautiful beach, ocean waves, blue sky",
+          "20" :"sunny morning, full body shot, a girl wearing a white T-shirt and denim shorts, walking on a beautiful beach, ocean waves, blue sky",
+          "40" :"bright noon, side view, a girl wearing a white T-shirt and denim shorts, walking along the shoreline, ocean breeze blowing her hair, dynamic motion",
+          "60" :"bright noon, side view, a girl wearing a white T-shirt and denim shorts, walking along the shoreline, ocean breeze blowing her hair, dynamic motion",
+          "80" :"golden hour sunset, close-up shot, a beautiful girl wearing a casual T-shirt and denim shorts, walking on the beach, sunset glow, soft lighting, hair floating in the wind",
+          "100" :"golden hour sunset, close-up shot, a beautiful girl wearing a casual T-shirt and denim shorts, walking on the beach, sunset glow, soft lighting, hair floating in the wind",
+          "110" :"sunset beach, a girl wearing a T-shirt and shorts walking away into the sunset, cinematic lighting, masterpiece"
+    </div>
+  </div>
 
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
